@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar" sourcepath="/Users/alleyyu/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/compiler-2.4.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/sun-util.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/sorcerer-javac-0.11-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/alleyyu/Downloads/htmlunit-driver-2.38.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
