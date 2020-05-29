@@ -62,7 +62,9 @@ WebDriver driver;
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		CalendarSelectTest test = new CalendarSelectTest();
+		test.CalendarSelectHandling();
 		//This code cannot be run since there is no testing environment.
 	}
 

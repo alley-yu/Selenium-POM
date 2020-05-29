@@ -1,4 +1,116 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 127.914 s - in TestSuite
+Tests run: 51, Failures: 4, Errors: 0, Skipped: 47, Time elapsed: 6.211 s <<< FAILURE! - in TestSuite
+setUp(com.crm.qa.testcases.DealsPageTest)  Time elapsed: 1.849 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 81
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LEIs-MacBook-Pro.local', ip: '2601:644:8a00:13f8:dc43:15ae:402f:44c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '13.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b62b789 chromedriver + 4671369
+1   chromedriver                        0x000000010b5c65d3 chromedriver + 4257235
+2   chromedriver                        0x000000010b27000f chromedriver + 757775
+3   chromedriver                        0x000000010b1cffc9 chromedriver + 102345
+4   chromedriver                        0x000000010b1cc1fc chromedriver + 86524
+5   chromedriver                        0x000000010b1fb403 chromedriver + 279555
+6   chromedriver                        0x000000010b1f8213 chromedriver + 266771
+7   chromedriver                        0x000000010b1d221d chromedriver + 111133
+8   chromedriver                        0x000000010b1d31c5 chromedriver + 115141
+9   chromedriver                        0x000000010b5ee03f chromedriver + 4419647
+10  chromedriver                        0x000000010b5facda chromedriver + 4472026
+11  chromedriver                        0x000000010b5faa77 chromedriver + 4471415
+12  chromedriver                        0x000000010b5d2189 chromedriver + 4305289
+13  chromedriver                        0x000000010b5fb587 chromedriver + 4474247
+14  chromedriver                        0x000000010b5e3dc7 chromedriver + 4378055
+15  chromedriver                        0x000000010b6117f4 chromedriver + 4564980
+16  chromedriver                        0x000000010b631717 chromedriver + 4695831
+17  libsystem_pthread.dylib             0x00007fff70257109 _pthread_start + 148
+18  libsystem_pthread.dylib             0x00007fff70252b8b thread_start + 15
+
+	at com.crm.qa.testcases.DealsPageTest.setUp(DealsPageTest.java:36)
+
+setUp(com.crm.qa.testcases.HomePageTest)  Time elapsed: 1.051 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 81
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LEIs-MacBook-Pro.local', ip: '2601:644:8a00:13f8:dc43:15ae:402f:44c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '13.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000104b69789 chromedriver + 4671369
+1   chromedriver                        0x0000000104b045d3 chromedriver + 4257235
+2   chromedriver                        0x00000001047ae00f chromedriver + 757775
+3   chromedriver                        0x000000010470dfc9 chromedriver + 102345
+4   chromedriver                        0x000000010470a1fc chromedriver + 86524
+5   chromedriver                        0x0000000104739403 chromedriver + 279555
+6   chromedriver                        0x0000000104736213 chromedriver + 266771
+7   chromedriver                        0x000000010471021d chromedriver + 111133
+8   chromedriver                        0x00000001047111c5 chromedriver + 115141
+9   chromedriver                        0x0000000104b2c03f chromedriver + 4419647
+10  chromedriver                        0x0000000104b38cda chromedriver + 4472026
+11  chromedriver                        0x0000000104b38a77 chromedriver + 4471415
+12  chromedriver                        0x0000000104b10189 chromedriver + 4305289
+13  chromedriver                        0x0000000104b39587 chromedriver + 4474247
+14  chromedriver                        0x0000000104b21dc7 chromedriver + 4378055
+15  chromedriver                        0x0000000104b4f7f4 chromedriver + 4564980
+16  chromedriver                        0x0000000104b6f717 chromedriver + 4695831
+17  libsystem_pthread.dylib             0x00007fff70257109 _pthread_start + 148
+18  libsystem_pthread.dylib             0x00007fff70252b8b thread_start + 15
+
+	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:32)
+
+setUp(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 1.028 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 81
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LEIs-MacBook-Pro.local', ip: '2601:644:8a00:13f8:dc43:15ae:402f:44c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '13.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b5ec789 chromedriver + 4671369
+1   chromedriver                        0x000000010b5875d3 chromedriver + 4257235
+2   chromedriver                        0x000000010b23100f chromedriver + 757775
+3   chromedriver                        0x000000010b190fc9 chromedriver + 102345
+4   chromedriver                        0x000000010b18d1fc chromedriver + 86524
+5   chromedriver                        0x000000010b1bc403 chromedriver + 279555
+6   chromedriver                        0x000000010b1b9213 chromedriver + 266771
+7   chromedriver                        0x000000010b19321d chromedriver + 111133
+8   chromedriver                        0x000000010b1941c5 chromedriver + 115141
+9   chromedriver                        0x000000010b5af03f chromedriver + 4419647
+10  chromedriver                        0x000000010b5bbcda chromedriver + 4472026
+11  chromedriver                        0x000000010b5bba77 chromedriver + 4471415
+12  chromedriver                        0x000000010b593189 chromedriver + 4305289
+13  chromedriver                        0x000000010b5bc587 chromedriver + 4474247
+14  chromedriver                        0x000000010b5a4dc7 chromedriver + 4378055
+15  chromedriver                        0x000000010b5d27f4 chromedriver + 4564980
+16  chromedriver                        0x000000010b5f2717 chromedriver + 4695831
+17  libsystem_pthread.dylib             0x00007fff70257109 _pthread_start + 148
+18  libsystem_pthread.dylib             0x00007fff70252b8b thread_start + 15
+
+	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
+
+setUp(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 1.111 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 81
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LEIs-MacBook-Pro.local', ip: '2601:644:8a00:13f8:dc43:15ae:402f:44c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '13.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010240f789 chromedriver + 4671369
+1   chromedriver                        0x00000001023aa5d3 chromedriver + 4257235
+2   chromedriver                        0x000000010205400f chromedriver + 757775
+3   chromedriver                        0x0000000101fb3fc9 chromedriver + 102345
+4   chromedriver                        0x0000000101fb01fc chromedriver + 86524
+5   chromedriver                        0x0000000101fdf403 chromedriver + 279555
+6   chromedriver                        0x0000000101fdc213 chromedriver + 266771
+7   chromedriver                        0x0000000101fb621d chromedriver + 111133
+8   chromedriver                        0x0000000101fb71c5 chromedriver + 115141
+9   chromedriver                        0x00000001023d203f chromedriver + 4419647
+10  chromedriver                        0x00000001023decda chromedriver + 4472026
+11  chromedriver                        0x00000001023dea77 chromedriver + 4471415
+12  chromedriver                        0x00000001023b6189 chromedriver + 4305289
+13  chromedriver                        0x00000001023df587 chromedriver + 4474247
+14  chromedriver                        0x00000001023c7dc7 chromedriver + 4378055
+15  chromedriver                        0x00000001023f57f4 chromedriver + 4564980
+16  chromedriver                        0x0000000102415717 chromedriver + 4695831
+17  libsystem_pthread.dylib             0x00007fff70257109 _pthread_start + 148
+18  libsystem_pthread.dylib             0x00007fff70252b8b thread_start + 15
+
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
+

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.DealsPageTest">
+      <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
-          <include name="createNewDealWithData" invocation-numbers="0 1"/>
-          <include name="tearDown"/>
+          <include name="verifyUserNameLabelTest"/>
+          <include name="clickOnContactsPageTest"/>
           <include name="setUp"/>
+          <include name="clickOnDealsPageTest"/>
+          <include name="clickOnTasksPageTest"/>
+          <include name="verifyHomePageTitleTest"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.DealsPageTest -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

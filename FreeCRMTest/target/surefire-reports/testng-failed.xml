@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.DealsPageTest">
+        <methods>
+          <include name="createNewDealWithData" invocation-numbers="0 1 2 3"/>
+          <include name="clickDealsOrderByDesc"/>
+          <include name="setUp"/>
+          <include name="checkDealsLabel"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.DealsPageTest -->
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyUserNameLabelTest"/>
+          <include name="clickOnContactsPageTest"/>
+          <include name="setUp"/>
+          <include name="clickOnDealsPageTest"/>
+          <include name="clickOnTasksPageTest"/>
+          <include name="verifyHomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="crmLogoImgTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateCreateNewContact" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
