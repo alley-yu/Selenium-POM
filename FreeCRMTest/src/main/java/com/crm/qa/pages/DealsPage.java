@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -49,6 +50,19 @@ public class DealsPage extends TestBase {
 		PageFactory.initElements(driver,this);
 	}
 	
+	public String checkPageTitle() {
+		//Use javascript executor to get title
+		//To initialize the JS object
+		JavascriptExecutor JS = (JavascriptExecutor) driver;
+		
+		//To get the site title
+		String currTitle = (String)JS.executeScript("return document.title");
+		System.out.println("*********** Deal Page Title**********");
+		System.out.println("The title of current page is: " + currTitle);
+		
+		return currTitle;
+	}
+	
 	public boolean checkDealsLabel() {
 		return dealsLabel.isDisplayed();
 	}
@@ -82,6 +96,8 @@ public class DealsPage extends TestBase {
 		
 		return dealDetailsList;
 	}
+	
+	
 	
 
 

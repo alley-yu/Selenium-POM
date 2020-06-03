@@ -44,11 +44,16 @@ public class DealsPageTest extends TestBase {
 	}
 	
 	@Test
+	public void checkPageTitle() {
+		Assert.assertEquals(dealsPage.checkPageTitle(), "CRMPRO :: 3.0", "The page title is not as expected.");
+	}
+	
+//	@Test
 	public void checkDealsLabel() {
 		Assert.assertTrue(dealsPage.checkDealsLabel(), "Deals label is not correct.");
 	}
 	
-	@Test
+//	@Test
 	public void clickDealsOrderByDesc() {
 		dealsPage.dealsOrderDesc();
 	}
@@ -75,7 +80,7 @@ public class DealsPageTest extends TestBase {
 		return data;
 	}
 	
-	@Test(dataProvider = "getCRMTestData")
+//	@Test(dataProvider = "getCRMTestData")
 	public void createNewDealWithData(String titleStr, String compStr, String amountStr) {
 		homePage.clickOnNewDealLink();
 		WebElement newDealNo = driver.findElement(By.xpath("//input[@name = 'sequence']"));
