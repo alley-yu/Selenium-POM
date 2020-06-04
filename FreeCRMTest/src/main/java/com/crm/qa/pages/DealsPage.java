@@ -52,6 +52,7 @@ public class DealsPage extends TestBase {
 	
 	public String checkPageTitle() {
 		//Use javascript executor to get title
+		
 		//To initialize the JS object
 		JavascriptExecutor JS = (JavascriptExecutor) driver;
 		
