@@ -6,7 +6,7 @@
       <class name="com.test.GoogleTest">
         <methods>
           <include name="setUp"/>
-          <include name="googleLogoTest"/>
+          <include name="googleSearch"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.test.GoogleTest -->

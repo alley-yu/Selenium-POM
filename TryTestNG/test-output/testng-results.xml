@@ -1,259 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-01T11:37:22 PDT" name="TestNG Automation Suite" finished-at="2020-05-01T11:38:08 PDT" duration-ms="45468">
+  <suite started-at="2020-06-04T18:32:30 PDT" name="TestNG Automation Suite" finished-at="2020-06-04T18:32:39 PDT" duration-ms="8340">
     <groups>
-      <group name="findDropdown">
-        <method signature="BootStrapDropdownTest.findDropdownBox()[pri:1, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="findDropdownBox" class="com.test.BootStrapDropdownTest"/>
-      </group> <!-- findDropdown -->
-      <group name="Valid data">
-        <method signature="BootStrapDropdownTest.less3SelectedFromDropdown()[pri:2, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="less3SelectedFromDropdown" class="com.test.BootStrapDropdownTest"/>
-        <method signature="BootStrapDropdownTest.more3SelectedFromDropdown()[pri:3, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="more3SelectedFromDropdown" class="com.test.BootStrapDropdownTest"/>
-      </group> <!-- Valid data -->
-      <group name="TestNGBasics">
-        <method signature="TestNGBasics.googleSearchTest()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" name="googleSearchTest" class="com.test.TestNGBasics"/>
-        <method signature="TestNGBasics.googleTitleTest()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" name="googleTitleTest" class="com.test.TestNGBasics"/>
-      </group> <!-- TestNGBasics -->
-      <group name="GoogleTest">
-        <method signature="GoogleTest.googleGmailLinkTest()[pri:3, instance:com.test.GoogleTest@2cbb3d47]" name="googleGmailLinkTest" class="com.test.GoogleTest"/>
-        <method signature="GoogleTest.googleLogoTest()[pri:2, instance:com.test.GoogleTest@2cbb3d47]" name="googleLogoTest" class="com.test.GoogleTest"/>
-        <method signature="GoogleTest.googleTitleTest()[pri:1, instance:com.test.GoogleTest@2cbb3d47]" name="googleTitleTest" class="com.test.GoogleTest"/>
-      </group> <!-- GoogleTest -->
-      <group name="Invalid data">
-        <method signature="BootStrapDropdownTest.noneSelectedFromDropdown1()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="noneSelectedFromDropdown1" class="com.test.BootStrapDropdownTest"/>
-        <method signature="BootStrapDropdownTest.noneSelectedFromDropdown2()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="noneSelectedFromDropdown2" class="com.test.BootStrapDropdownTest"/>
-        <method signature="BootStrapDropdownTest.noneSelectedFromDropdown3()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" name="noneSelectedFromDropdown3" class="com.test.BootStrapDropdownTest"/>
-      </group> <!-- Invalid data -->
+      <group name="GoogleTest with parameter as input">
+        <method signature="GoogleTest.googleSearch(java.lang.String, java.lang.String)[pri:4, instance:com.test.GoogleTest@5db45159]" name="googleSearch" class="com.test.GoogleTest"/>
+      </group> <!-- GoogleTest with parameter as input -->
     </groups>
-    <test started-at="2020-05-01T11:37:22 PDT" name="TestNG Basic Feature Test" finished-at="2020-05-01T11:38:08 PDT" duration-ms="45468">
-      <class name="com.test.TestNGBasics">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:37:22 PDT" name="setUp" finished-at="2020-05-01T11:37:22 PDT" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:37:22 PDT" name="launchBrowser" finished-at="2020-05-01T11:37:22 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="logIn()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="logIn" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method signature="googleSearchTest()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="googleSearchTest" finished-at="2020-05-01T11:38:08 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleSearchTest -->
-        <test-method is-config="true" signature="enterURL()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="enterURL" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterURL -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="logOut" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="enterURL()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="enterURL" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterURL -->
-        <test-method signature="googleTitleTest()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="googleTitleTest" finished-at="2020-05-01T11:38:08 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleTitleTest -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="logOut" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="deleteAllCookies()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="deleteAllCookies" finished-at="2020-05-01T11:38:08 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAllCookies -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="closeBrowser" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="generateTestReport()[pri:0, instance:com.test.TestNGBasics@6e75aa0d]" started-at="2020-05-01T11:38:08 PDT" name="generateTestReport" finished-at="2020-05-01T11:38:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateTestReport -->
-      </class> <!-- com.test.TestNGBasics -->
+    <test started-at="2020-06-04T18:32:30 PDT" name="TestNG Basic Feature Test" finished-at="2020-06-04T18:32:39 PDT" duration-ms="8340">
       <class name="com.test.GoogleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:00 PDT" name="setUp" finished-at="2020-05-01T11:38:03 PDT" duration-ms="2803" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.GoogleTest@5db45159]" started-at="2020-06-04T18:32:30 PDT" name="setUp" finished-at="2020-06-04T18:32:35 PDT" duration-ms="4226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="googleTitleTest()[pri:1, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:03 PDT" name="googleTitleTest" finished-at="2020-05-01T11:38:03 PDT" duration-ms="8" status="PASS">
+        <test-method signature="googleSearch(java.lang.String, java.lang.String)[pri:4, instance:com.test.GoogleTest@5db45159]" started-at="2020-06-04T18:32:35 PDT" name="googleSearch" finished-at="2020-06-04T18:32:39 PDT" duration-ms="3906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Software Testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Software Automation Testing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:03 PDT" name="tearDown" finished-at="2020-05-01T11:38:03 PDT" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:03 PDT" name="setUp" finished-at="2020-05-01T11:38:06 PDT" duration-ms="2755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="googleLogoTest()[pri:2, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:06 PDT" name="googleLogoTest" finished-at="2020-05-01T11:38:06 PDT" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:06 PDT" name="tearDown" finished-at="2020-05-01T11:38:06 PDT" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:06 PDT" name="setUp" finished-at="2020-05-01T11:38:07 PDT" duration-ms="1576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="googleGmailLinkTest()[pri:3, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:07 PDT" name="googleGmailLinkTest" finished-at="2020-05-01T11:38:07 PDT" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleGmailLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.GoogleTest@2cbb3d47]" started-at="2020-05-01T11:38:07 PDT" name="tearDown" finished-at="2020-05-01T11:38:08 PDT" duration-ms="85" status="PASS">
+        </test-method> <!-- googleSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.GoogleTest@5db45159]" started-at="2020-06-04T18:32:39 PDT" name="tearDown" finished-at="2020-06-04T18:32:39 PDT" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.GoogleTest -->
-      <class name="com.test.BootStrapDropdownTest">
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:22 PDT" name="launchPage" finished-at="2020-05-01T11:37:25 PDT" duration-ms="2443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="testExpectedExceptionsPara()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:25 PDT" name="testExpectedExceptionsPara" finished-at="2020-05-01T11:37:25 PDT" duration-ms="4" status="PASS">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "100A"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "100A"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
-at java.base/java.lang.Integer.parseInt(Integer.java:658)
-at java.base/java.lang.Integer.parseInt(Integer.java:776)
-at com.test.BootStrapDropdownTest.testExpectedExceptionsPara(BootStrapDropdownTest.java:156)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testExpectedExceptionsPara -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:25 PDT" name="closePage" finished-at="2020-05-01T11:37:25 PDT" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:25 PDT" name="launchPage" finished-at="2020-05-01T11:37:26 PDT" duration-ms="1759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="findDropdownBox()[pri:1, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:26 PDT" name="findDropdownBox" finished-at="2020-05-01T11:37:26 PDT" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findDropdownBox -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:26 PDT" name="closePage" finished-at="2020-05-01T11:37:27 PDT" duration-ms="89" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:27 PDT" name="launchPage" finished-at="2020-05-01T11:37:28 PDT" duration-ms="1817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="less3SelectedFromDropdown()[pri:2, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:28 PDT" name="less3SelectedFromDropdown" finished-at="2020-05-01T11:37:32 PDT" depends-on-methods="com.test.BootStrapDropdownTest.findDropdownBox" duration-ms="3740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- less3SelectedFromDropdown -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:32 PDT" name="closePage" finished-at="2020-05-01T11:37:32 PDT" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:32 PDT" name="launchPage" finished-at="2020-05-01T11:37:34 PDT" duration-ms="1808" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="more3SelectedFromDropdown()[pri:3, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:34 PDT" name="more3SelectedFromDropdown" finished-at="2020-05-01T11:37:38 PDT" duration-ms="3801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- more3SelectedFromDropdown -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:38 PDT" name="closePage" finished-at="2020-05-01T11:37:38 PDT" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:38 PDT" name="launchPage" finished-at="2020-05-01T11:37:40 PDT" duration-ms="1744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="simpleTestDependsOnMethod()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:40 PDT" name="simpleTestDependsOnMethod" finished-at="2020-05-01T11:37:40 PDT" depends-on-methods="com.test.BootStrapDropdownTest.more3SelectedFromDropdown" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- simpleTestDependsOnMethod -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:40 PDT" name="closePage" finished-at="2020-05-01T11:37:42 PDT" duration-ms="2208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:42 PDT" name="launchPage" finished-at="2020-05-01T11:37:44 PDT" duration-ms="1846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="noneSelectedFromDropdown1()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:44 PDT" name="noneSelectedFromDropdown1" finished-at="2020-05-01T11:37:48 PDT" duration-ms="4246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noneSelectedFromDropdown1 -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:48 PDT" name="closePage" finished-at="2020-05-01T11:37:48 PDT" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:48 PDT" name="launchPage" finished-at="2020-05-01T11:37:50 PDT" duration-ms="1827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="noneSelectedFromDropdown2()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:50 PDT" name="noneSelectedFromDropdown2" finished-at="2020-05-01T11:37:54 PDT" duration-ms="4161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noneSelectedFromDropdown2 -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:54 PDT" name="closePage" finished-at="2020-05-01T11:37:54 PDT" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:54 PDT" name="launchPage" finished-at="2020-05-01T11:37:56 PDT" duration-ms="1846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPage -->
-        <test-method signature="noneSelectedFromDropdown3()[pri:4, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:37:56 PDT" name="noneSelectedFromDropdown3" finished-at="2020-05-01T11:38:00 PDT" duration-ms="3804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noneSelectedFromDropdown3 -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:com.test.BootStrapDropdownTest@7fc229ab]" started-at="2020-05-01T11:38:00 PDT" name="closePage" finished-at="2020-05-01T11:38:00 PDT" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePage -->
-      </class> <!-- com.test.BootStrapDropdownTest -->
     </test> <!-- TestNG Basic Feature Test -->
   </suite> <!-- TestNG Automation Suite -->
 </testng-results>

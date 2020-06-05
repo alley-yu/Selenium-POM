@@ -2,6 +2,10 @@
 
 <suite name="TestNG Automation Suite">
 	<test name="TestNG Basic Feature Test">
+	
+	<parameter name = "searchInput1" value = "Software Testing"/>
+	<parameter name = "searchInput2" value = "Software Automation Testing"/>
+	
 		<classes>
 			<class name="com.test.BootStrapDropdownTest"></class>
 			<class name="com.test.GoogleTest"></class>
