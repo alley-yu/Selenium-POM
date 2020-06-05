@@ -42,6 +42,12 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath = "//form[@name = 'contactForm']//preceding::input[@type = 'submit' and @value = 'Save']")
 	WebElement saveBtn;
 	
+	@FindBy(name = "cs_name")
+	WebElement byName;
+	
+	@FindBy(xpath = "//input[@name = 'cs_submit' and @value = 'Search']")
+	WebElement searchBtn;
+	
 	
 	//Initialize page objects
 	public ContactsPage() {
@@ -64,6 +70,12 @@ public class ContactsPage extends TestBase {
 		lastName.sendKeys(ltName);
 		company.sendKeys(comp);
 		saveBtn.click();
+		
+	}
+	
+	public void searchContacts(String nameWildcard) {
+		byName.sendKeys(nameWildcard);
+		searchBtn.click();
 		
 	}
 
