@@ -91,7 +91,7 @@ public class BootStrapDropdownTest {
 			
 	}
 	
-	@Test(dependsOnMethods = "more3SelectedFromDropdown")
+	@Test(dependsOnMethods = "more3SelectedFromDropdown", groups = "Valid data")
 	public void simpleTestDependsOnMethod() {
 		System.out.println("This case depends on method: more3SelectedFromDropdown. It won't be executed only more3SelectedFromDropdown is successful.");
 	}
@@ -150,7 +150,7 @@ public class BootStrapDropdownTest {
 			
 	}
 	
-	@Test(expectedExceptions = NumberFormatException.class)
+	@Test(expectedExceptions = NumberFormatException.class, groups = "Misc")
 	public void testExpectedExceptionsPara() {
 		String x = "100A";
 		Integer.parseInt(x);

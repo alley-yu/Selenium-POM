@@ -1,15 +1,28 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="TestNG Automation Suite">
-	<test name="TestNG Basic Feature Test">
-	
+
+<suite name="TestNG Automation Suite"  parallel = "methods" thread-count = "3">
+
 	<parameter name = "searchInput1" value = "Software Testing"/>
 	<parameter name = "searchInput2" value = "Software Automation Testing"/>
+	
+	<test name="TestNG Basic Feature Test">
+	
+		<groups>
+			<define name = "all">
+				<include name = "GoogleTest" />
+				<include name = "GoogleTestWithParameteras" />
+			</define>
+			<run>
+				<include name = "all" />
+			</run>
+		</groups>
 	
 		<classes>
 			<class name="com.test.BootStrapDropdownTest"></class>
 			<class name="com.test.GoogleTest"></class>
 			<class name="com.test.TestNGBasics"></class>
 		</classes>
+		
 	</test>
 </suite>

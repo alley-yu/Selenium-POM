@@ -18,14 +18,20 @@ import org.testng.annotations.Test;
 
 public class GoogleTest {
 
-	private static final String WEBDRIVER_CHROME_DRIVER = "webdriver.chrome.driver";
+	private final String WEBDRIVER_CHROME_DRIVER = "webdriver.chrome.driver";
 	WebDriver driver;
 	
 	
-	@BeforeMethod
+	@BeforeMethod (alwaysRun = true)
 	public void setUp() {
+		
+		System.out.println("SetupXXXXXx");
+		
 		System.setProperty(WEBDRIVER_CHROME_DRIVER, System.getProperty("user.home")+"/bin/chromedriver");
 		driver = new ChromeDriver();
+		
+		System.out.println("*********XXXXXXXXX" + driver);
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
@@ -35,8 +41,9 @@ public class GoogleTest {
 	
 	
 	//Test Cases will be executed at random order. But we can use priority to specify the running sequence.
-//	@Test(priority = 1, groups = "GoogleTest")
+	@Test(priority = 1, groups = "GoogleTest")
 	public void googleTitleTest() {
+		System.out.println("*********" + driver);
 		String title = driver.getTitle();
 		System.out.println(title);
 	}
@@ -47,14 +54,14 @@ public class GoogleTest {
 		System.out.println("Logo Displayed: " + logoDisplay);
 	}
 	
-//	@Test(priority = 3, groups = "GoogleTest")
+	@Test(priority = 3, groups = "GoogleTest")
 	public void googleGmailLinkTest() {
 		boolean gmailLinkDisplay = driver.findElement(By.linkText("Gmail")).isDisplayed();
 		System.out.println("Gmail Link Displayed: " + gmailLinkDisplay);
 	}
 	
 	
-	@Test(priority = 4, groups = "GoogleTest with parameter as input")
+	@Test(priority = 4, groups = {"GoogleTest", "GoogleTestWithParameteras"})
 	@Parameters({"searchInput1", "searchInput2"})
 	public void googleSearch(String searchInput1, String searchInput2) {
 		
@@ -88,7 +95,7 @@ public class GoogleTest {
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod (alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}
