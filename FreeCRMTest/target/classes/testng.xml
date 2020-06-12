@@ -15,7 +15,8 @@
 			<class name="com.crm.qa.testcases.HomePageTest"></class>
 			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
 			<class name="com.crm.qa.testcases.DealsPageTest"></class>
-<!--Choose Class you want not to runt this time, right-click mouse ->Source->Add Block Comment to comment it.  -->
+<!-- Choose Class you want not to run this time, right-click mouse ->Source->Add Block Comment to comment it.  -->
 		</classes>
 	</test>
+	
 </suite>

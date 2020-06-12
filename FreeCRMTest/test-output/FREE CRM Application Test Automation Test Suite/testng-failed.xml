@@ -2,42 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="com.qa.ExtentReportListerner.ExtentReporterNG"/>
+    <listener class-name="Analyzer.MyTransformer"/>
   </listeners>
-  <test name="Free CRM App Test Cases(failed)">
+  <test name="RetryMultipleFailedTestCases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.HomePageTest">
+      <class name="mytest.MyTests">
         <methods>
-          <include name="verifyUserNameLabelTest"/>
-          <include name="clickOnContactsPageTest"/>
-          <include name="setUp"/>
-          <include name="clickOnDealsPageTest"/>
-          <include name="clickOnTasksPageTest"/>
-          <include name="verifyHomePageTitleTest"/>
+          <include name="test2"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
-      <class name="com.crm.qa.testcases.DealsPageTest">
-        <methods>
-          <include name="createNewDealWithData" invocation-numbers="0 1 2 3"/>
-          <include name="clickDealsOrderByDesc"/>
-          <include name="setUp"/>
-          <include name="checkDealsLabel"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.DealsPageTest -->
-      <class name="com.crm.qa.testcases.ContactsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="validateCreateNewContact" invocation-numbers="0 1 2"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="crmLogoImgTest"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      </class> <!-- mytest.MyTests -->
     </classes>
-  </test> <!-- Free CRM App Test Cases(failed) -->
+  </test> <!-- RetryMultipleFailedTestCases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
