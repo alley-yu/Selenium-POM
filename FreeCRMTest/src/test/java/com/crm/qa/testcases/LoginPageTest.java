@@ -26,18 +26,18 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@Test (priority = 1)
-	public void loginPageTitleTest() {
+	public void loginPageTitleTest() throws InterruptedException {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
 	}
 	
-	@Test (priority = 2)
+//	@Test (priority = 2)
 	public void crmLogoImgTest() {
 		Boolean crmLogoDisplay = loginPage.validateCRMLogo();
 		Assert.assertTrue(crmLogoDisplay);
 	}
 	
-	@Test (priority = 3)
+//	@Test (priority = 3)
 	public void loginTest() {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}

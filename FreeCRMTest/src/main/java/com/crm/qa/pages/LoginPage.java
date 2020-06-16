@@ -23,6 +23,7 @@ public class LoginPage extends TestBase {
 	
 	@FindBy(xpath = "//img[@class = 'img-responsive' and @src = 'https://classic.freecrm.com/img/logo.png']")
 	WebElement crmLogo;
+
 	
 	//Contractor, to initialize the page objects
 	public LoginPage() {
@@ -31,7 +32,7 @@ public class LoginPage extends TestBase {
 	}
 	
 	//Actions:
-	public String validateLoginPageTitle() {
+	public String validateLoginPageTitle() throws InterruptedException {
 		return driver.getTitle();
 	}
 	
