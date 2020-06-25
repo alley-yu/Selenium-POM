@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-15T23:45:16Z" name="Default suite" finished-at="2020-06-15T23:45:22Z" duration-ms="5468">
+  <suite started-at="2020-06-25T06:04:16Z" name="Default suite" finished-at="2020-06-25T06:04:21Z" duration-ms="5432">
     <groups>
     </groups>
-    <test started-at="2020-06-15T23:45:16Z" name="Default test" finished-at="2020-06-15T23:45:22Z" duration-ms="5468">
-      <class name="FreeCRMHashMap.FreeCRMTestWithHashMap">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:FreeCRMHashMap.FreeCRMTestWithHashMap@35aea049]" started-at="2020-06-15T16:45:16Z" name="setUp" finished-at="2020-06-15T16:45:19Z" duration-ms="2467" status="PASS">
+    <test started-at="2020-06-25T06:04:16Z" name="Default test" finished-at="2020-06-25T06:04:21Z" duration-ms="5432">
+      <class name="mytest.BarcodeTest">
+        <test-method signature="barCodeTest()[pri:0, instance:mytest.BarcodeTest@4738a206]" started-at="2020-06-24T23:04:16Z" name="barCodeTest" finished-at="2020-06-24T23:04:21Z" duration-ms="5399" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="regularUserLogin()[pri:0, instance:FreeCRMHashMap.FreeCRMTestWithHashMap@35aea049]" started-at="2020-06-15T16:45:19Z" name="regularUserLogin" finished-at="2020-06-15T16:45:22Z" duration-ms="2805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- regularUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FreeCRMHashMap.FreeCRMTestWithHashMap@35aea049]" started-at="2020-06-15T16:45:22Z" name="tearDown" finished-at="2020-06-15T16:45:22Z" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- FreeCRMHashMap.FreeCRMTestWithHashMap -->
+        </test-method> <!-- barCodeTest -->
+      </class> <!-- mytest.BarcodeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
