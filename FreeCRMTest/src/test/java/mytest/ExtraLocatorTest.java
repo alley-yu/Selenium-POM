@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ByIdOrName;
 import org.openqa.selenium.support.pagefactory.ByAll;
+import org.openqa.selenium.support.pagefactory.ByChained;
 
 public class ExtraLocatorTest {
 
@@ -19,6 +20,11 @@ public class ExtraLocatorTest {
 				By.xpath("//input[@name = 'firstname']"))).sendKeys("Alley");
 		
 		driver.findElement(new ByIdOrName("u_0_o")).sendKeys("Yu");
+		
+		driver.findElement(new ByChained(By.id("u_0_q"), 
+				By.xpath("//div[@class = 'uiStickyPlaceholderInput uiStickyPlaceholderEmptyInput']"), 
+				By.name("reg_email__"))).sendKeys("alley.yu@hotmail.com");
+				
 
 	}
 
