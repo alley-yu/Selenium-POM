@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-27T00:30:07Z" name="Default suite" finished-at="2020-06-27T00:30:13Z" duration-ms="6022">
+  <suite started-at="2020-06-29T18:56:11Z" name="Default suite" finished-at="2020-06-29T18:56:15Z" duration-ms="3987">
     <groups>
     </groups>
-    <test started-at="2020-06-27T00:30:07Z" name="Default test" finished-at="2020-06-27T00:30:13Z" duration-ms="6022">
+    <test started-at="2020-06-29T18:56:11Z" name="Default test" finished-at="2020-06-29T18:56:15Z" duration-ms="3987">
       <class name="mytest.WebDriverManagerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-26T17:30:07Z" name="setup" finished-at="2020-06-26T17:30:12Z" duration-ms="4064" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:11Z" name="setup" finished-at="2020-06-29T11:56:13Z" duration-ms="1828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkTitle()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-26T17:30:12Z" name="checkTitle" finished-at="2020-06-26T17:30:13Z" duration-ms="1809" status="PASS">
+        <test-method signature="checkTitle()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:13Z" name="checkTitle" finished-at="2020-06-29T11:56:15Z" duration-ms="1989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-26T17:30:13Z" name="tearDown" finished-at="2020-06-26T17:30:13Z" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:15Z" name="tearDown" finished-at="2020-06-29T11:56:15Z" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

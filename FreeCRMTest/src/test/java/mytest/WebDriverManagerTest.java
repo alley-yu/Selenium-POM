@@ -17,6 +17,9 @@ public class WebDriverManagerTest {
 	public void setup() {
 		
 		WebDriverManager.chromedriver().setup();
+		
+//		You can specify the browser version to run
+//		WebDriverManager.chromedriver().driverVersion("2.26").setup();
 		driver = new ChromeDriver();
 		
 	}
