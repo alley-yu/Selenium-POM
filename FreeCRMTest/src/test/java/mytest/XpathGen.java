@@ -26,6 +26,7 @@ public class XpathGen {
 		String lastName = createXpath("//input[@id = '{0}' and @name = '{1}']", "u_0_o", "lastname");
 		System.out.println(lastName);
 		
+		
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -33,6 +34,12 @@ public class XpathGen {
 		
 		driver.findElement(By.xpath(firstName)).sendKeys("Alley");
 		driver.findElement(By.xpath(lastName)).sendKeys("Yu");
+		
+		String nameVar = "reg_email__";
+		String xpathVar = "//input[@name = '" + nameVar + "']";
+		System.out.println(xpathVar);
+		driver.findElement(By.xpath(xpathVar)).sendKeys("alley.yu@hotmail.com");
+		
 		
 
 	}
