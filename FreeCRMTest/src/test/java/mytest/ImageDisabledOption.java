@@ -33,6 +33,7 @@ public class ImageDisabledOption {
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.amazon.com/");
 		System.out.println(driver.getTitle());
+		
 
 	}
 
