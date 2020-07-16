@@ -12,7 +12,7 @@ public class SVGImageHandle {
 //	SVG Image:
 //	Use xpath to locate, //*[name() = 'svg']//*[local-name() = 'path']  -->//* means going to child-level
 //	If more elements found, use attribute to narrow down the element locate
-//	e.g. //*[name() = 'svg' and @viewBox = '0 0 16 27'  and @ class = '_2gp_O1']
+//	e.g. //*[name() = 'svg' and @viewBox = '0 0 16 27'  and @class = '_2gp_O1']
 	
 
 
@@ -26,8 +26,8 @@ public class SVGImageHandle {
 		Thread.sleep(3000);
 		WebElement open = driver.findElement(By.xpath("//*[name() = 'svg' and @viewBox = '0 0 28 32']//*[local-name() = 'path' ]"));
 		open.click();
-		WebElement close = driver.findElement(By.xpath("//*[name() = 'svg' and @viewBox = '0 0 16 14']//*[local-name() = 'path' ]"));
-		close.click();
+//		WebElement close = driver.findElement(By.xpath("//*[name() = 'svg' and @viewBox = '0 0 16 14']//*[local-name() = 'path' ]"));
+//		close.click();
 		
 		driver.navigate().to("https://www.flipkart.com/");
 		driver.findElement(By.cssSelector("button._2AkmmA._29YdH8")).click();

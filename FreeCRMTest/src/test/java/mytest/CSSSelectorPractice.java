@@ -31,7 +31,7 @@ public class CSSSelectorPractice {
 //		7. ends with text in CSS: using $
 //		   e.g. input[id$= 'name']
 //		8. comma in CSS
-//		   e.g. input#u_0_m, select[name*= 'year'] (give out multipe results, input#u_0_m is firstname, select[name*= 'year' is Year dropdown box )
+//		   e.g. input#u_0_m, select[name*= 'year'] (give out multipe results, input#u_0_m is firstname, select[name*= 'year'] is Year dropdown box )
 //		9. first-of-type
 //		   e.g. ul.erkvQe>li:first-of-type first of the list in like google suggestion list
 //		9. last-of-type
