@@ -57,6 +57,16 @@ public class JavaBasicArray {
 		arrli.remove(3);
 		System.out.println(arrli);
 		
+		ArrayList arList1 = new ArrayList();
+		arList1.add(100);
+		arList1.add(200);
+		arList1.add("a");
+		arList1.add("b");
+		arList1.add("12.33");
+		arList1.add(true);
+		System.out.println("ArrayList arList1 has no type specifed. Its 5th element is " + arList1.get(4));
+		
+		
 //		2D Array
 		String arr1[][] = new String[2][3];
 		System.out.println("arr1 has "+ arr1.length + " rows.");
@@ -69,10 +79,6 @@ public class JavaBasicArray {
 		arr1[1][0] = "A1";
 		arr1[1][1] = "B1";
 		arr1[1][2] = "C1";
-		
-		arr1[2][0] = "A2";
-		arr1[2][1] = "B2";
-		arr1[2][2] = "C2";
 
 		
 
