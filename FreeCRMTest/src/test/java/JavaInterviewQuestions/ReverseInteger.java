@@ -16,7 +16,11 @@ public class ReverseInteger {
 		}
 		
 		System.out.println("The Reversed Number is: " + rev);
-
+		
+		//Use StringBuffer, but the output will be a string, instead of integer
+		int num1 = 23456;
+		System.out.println(new StringBuffer(String.valueOf(num1)).reverse());
+		
 	}
 
 }
