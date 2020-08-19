@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-29T18:56:11Z" name="Default suite" finished-at="2020-06-29T18:56:15Z" duration-ms="3987">
+  <suite started-at="2020-08-18T19:29:38Z" name="Default suite" finished-at="2020-08-18T19:29:42Z" duration-ms="3299">
     <groups>
     </groups>
-    <test started-at="2020-06-29T18:56:11Z" name="Default test" finished-at="2020-06-29T18:56:15Z" duration-ms="3987">
-      <class name="mytest.WebDriverManagerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:11Z" name="setup" finished-at="2020-06-29T11:56:13Z" duration-ms="1828" status="PASS">
+    <test started-at="2020-08-18T19:29:38Z" name="Default test" finished-at="2020-08-18T19:29:42Z" duration-ms="3299">
+      <class name="JavaInterviewQuestions.SingletonTestPage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:JavaInterviewQuestions.SingletonTestPage@5ba3f27a]" started-at="2020-08-18T12:29:38Z" name="setup" finished-at="2020-08-18T12:29:40Z" duration-ms="1662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkTitle()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:13Z" name="checkTitle" finished-at="2020-06-29T11:56:15Z" duration-ms="1989" status="PASS">
+        <test-method signature="testMethod()[pri:0, instance:JavaInterviewQuestions.SingletonTestPage@5ba3f27a]" started-at="2020-08-18T12:29:40Z" name="testMethod" finished-at="2020-08-18T12:29:41Z" duration-ms="1432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mytest.WebDriverManagerTest@52af26ee]" started-at="2020-06-29T11:56:15Z" name="tearDown" finished-at="2020-06-29T11:56:15Z" duration-ms="151" status="PASS">
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JavaInterviewQuestions.SingletonTestPage@5ba3f27a]" started-at="2020-08-18T12:29:41Z" name="tearDown" finished-at="2020-08-18T12:29:42Z" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mytest.WebDriverManagerTest -->
+      </class> <!-- JavaInterviewQuestions.SingletonTestPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
