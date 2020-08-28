@@ -10,7 +10,7 @@ public class CallByValueAndCallByRef {
 		CallByValueAndCallByRef obj = new CallByValueAndCallByRef();
 		int x = 10;
 		int y = 20;
-		obj.sum(x, y); //call by value
+		System.out.println(obj.sum(x, y)); //call by value
 		
 		obj.q = 50;
 		obj.p = 60;
