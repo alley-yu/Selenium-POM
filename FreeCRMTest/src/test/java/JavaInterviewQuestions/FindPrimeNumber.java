@@ -78,7 +78,7 @@ public class FindPrimeNumber {
 		int numToCheck = 576;
 		System.out.println("Number " + numToCheck + " is a Prime Number: " + isPrimeNum(numToCheck));
 		
-		Boolean isPrimeNum = (Boolean) isPrimeAndFactors(numToCheck).getOrDefault("isPrime", false); //if no return from the method, set a default value "isPrime = false". This way can hancle null return.
+		Boolean isPrimeNum = (Boolean) isPrimeAndFactors(numToCheck).getOrDefault("isPrime", false); //if no return from the method, set a default value "isPrime = false". This way can handle null return.
 		System.out.println("Number " + numToCheck + " is a Prime Number: " + isPrimeNum);
 		Object factorsObj = isPrimeAndFactors(numToCheck).getOrDefault("factors", Collections.emptyList()); //if no return from the method, set a default empty list.
 		if (!isPrimeNum) {

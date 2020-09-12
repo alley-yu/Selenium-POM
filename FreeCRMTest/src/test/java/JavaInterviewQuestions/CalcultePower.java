@@ -25,6 +25,7 @@ public class CalcultePower {
 			result = result * baseNum * baseNum;
 		}
 		
+		
 		return result;
 	}
 
