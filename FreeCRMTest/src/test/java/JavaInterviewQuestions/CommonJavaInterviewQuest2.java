@@ -127,28 +127,56 @@ public class CommonJavaInterviewQuest2 {
 	}
 	
 	public static boolean checkPrime(int num) {
-		boolean isPrime = true;
+//		boolean isPrime = true;
 		int i = 2;
-		while (num != 0 && i < num) {
+		while (num > 1 && i <= num/2) {
 				if(num%i == 0) {
-					isPrime = false;
-					break;
+//					isPrime = false;
+//					break;
+					return false;
 				}
 				i++;
 			}
 		
 //		System.out.println(num + " is a Prime Number: " + isPrime);
-		return isPrime;
+		return true;
 	}
 	
 	public static void findPrime(int numFrom, int numTo) {
 		List<Integer> primeList = new ArrayList<Integer>();
-		for (int i = numFrom; i <= numTo; i++) {
-			if (checkPrime(i)) {
-				primeList.add(i);
+		
+		if (numFrom <= numTo) {
+			for (int i = numFrom; i <= numTo; i++) {
+				if (checkPrime(i)) {
+					primeList.add(i);
+				}
 			}
+			System.out.println("The prime numbers between " + numFrom + " and " + numTo + " are: " + primeList);
+		}else {
+			System.out.println("Please input a reasonable number range.");
 		}
-		System.out.println("The prime numbers between " + numFrom + " and " + numTo + " are: " + primeList);
+		
+	}
+	
+public static void findPrime1(int numFrom, int numTo) {
+		
+	System.out.println("All prime numbers between " + numFrom + " and " + numTo + " are: ");
+	
+		while(numFrom <= numTo) {
+			boolean isPrime = true;
+			for (int i = 2; i <= numFrom/2; i++) {
+				if (numFrom % 2 == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if (isPrime) {
+				System.out.print(numFrom + " ");
+			}
+			numFrom ++;
+		}
+		
+		System.out.println();
 	}
 	
 	public static boolean isArmstrongNum(int num) {
@@ -185,7 +213,27 @@ public class CommonJavaInterviewQuest2 {
 				System.out.print(i + " ");
 			}
 		}
+		
+		System.out.println();
 	}
+	
+	public static void displayAllFactors(int num) {
+		System.out.println("All factors of " + num + " are: ");
+
+		if (num > 0) {
+			if(num >=2) {
+				for (int i = 1; i <= num/2; i++) {
+					if (num%i == 0) {
+						System.out.print(i + " ");
+					}
+				}
+			}
+			System.out.print(num);
+		}
+		System.out.println();
+	}
+	
+	
 	
 	
 
@@ -211,11 +259,15 @@ public class CommonJavaInterviewQuest2 {
 		
 		checkPrime(32);
 		
-		findPrime(10, 20);
+		findPrime(2, 2);
+		
+		findPrime1(2, 2);
 		
 		isArmstrongNum(1634);
 		
 		findArmstrongNum(100, 10000);
+		
+		displayAllFactors(16);
 		
 	
 
