@@ -24,9 +24,17 @@ public class CalcultePower {
 		for (int i = 1; i <= powerNum/2; i++) {
 			result = result * baseNum * baseNum;
 		}
-		
-		
+
 		return result;
+	}
+	
+	public static int powerWithRecursion(int baseNum, int powerNum) {
+		if (powerNum != 0) {
+			return baseNum * powerWithRecursion(baseNum, powerNum-1);
+		}else {
+			return 1;
+		}
+		
 	}
 
 	public static void main(String[] args) {
@@ -36,6 +44,8 @@ public class CalcultePower {
 		
 		System.out.println(base + "^" + power + " = " + powerCalculation(base, power));
 		System.out.println(base + "^" + power + " = " + powerCalculation1(base, power));
+		
+		System.out.println(base + "^" + power + " = " + powerWithRecursion(base, power));
 
 	}
 
