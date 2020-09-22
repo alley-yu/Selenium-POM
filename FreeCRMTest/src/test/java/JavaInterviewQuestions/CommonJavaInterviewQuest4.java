@@ -71,14 +71,84 @@ public class CommonJavaInterviewQuest4 {
 		return binary;
 		
 	}
+	
+	public static long decimalToBinary1(int num) {
+		
+		int decimalNum = num;
+		long binaryNum = 0;
+		int remainder = 0, i =1;
+		
+		
+		while (num != 0) {
+			remainder = num%2;
+			binaryNum = binaryNum + remainder * i;
+			i = i * 10;
+			num = num/2;
+		}
+		System.out.println("The decimal number " + decimalNum + " can be converted to binary number " + binaryNum);
+		return binaryNum;
+	}
+	
+	public static int octalToDecimal(int num) {
+		
+		int octalNum = num;
+		int decimalNum = 0;
+		int remainder = 0;
+		int i = 0;
+		
+		while(num!=0) {
+			remainder = num%10;
+			decimalNum = decimalNum + remainder * (int)Math.pow(8, i);
+			num = num/10;
+			i++;
+		}
+		
+		System.out.println("The octal number " + octalNum + " can be converted to decimal number " + decimalNum);
+
+		return decimalNum;
+		
+	}
+	
+	public static int decimalToOctal(int num) {
+		
+		int decimalNum = num;
+		int octalNum = 0;
+		int remainder = 0, i = 1;
+		
+		while(num != 0) {
+			remainder = num%8;
+			octalNum = octalNum + remainder * i;
+			num = num/8;
+			i = i*10;
+		}
+		
+		System.out.println("The decimal number " + decimalNum + " can be converted to octal number " + octalNum);
+		return octalNum;
+	}
+	
+	public static long binaryToOctal(int num) {
+		
+		return decimalToOctal(binaryToDecimal(num));
+		
+	}
 
 	public static void main(String[] args) {
 		
 		binaryToDecimal("10011011");
 		binaryToDecimal1("10011011");
 		binaryToDecimal(10011011);
+		System.out.println();
 		
-		decimalToBinary(156);
+		decimalToBinary(155);
+		decimalToBinary1(155);
+		System.out.println();
+		
+		octalToDecimal(116);
+		decimalToOctal(155);
+		System.out.println();
+		
+		binaryToOctal(10011011);
+		
 
 	}
 
