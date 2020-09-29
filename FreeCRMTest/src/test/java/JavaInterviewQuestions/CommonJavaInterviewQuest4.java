@@ -136,7 +136,7 @@ public class CommonJavaInterviewQuest4 {
 		
 		binaryToDecimal("10011011");
 		binaryToDecimal1("10011011");
-		binaryToDecimal(10011011);
+		binaryToDecimal(1010010);
 		System.out.println();
 		
 		decimalToBinary(155);
