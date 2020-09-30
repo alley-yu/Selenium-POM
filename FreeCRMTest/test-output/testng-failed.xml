@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="mytest.BarcodeTest">
+      <class name="SeleniumInterviewQuestions.SeleniumInterviewQuest1">
         <methods>
-          <include name="barCodeTest"/>
+          <include name="switchWindow"/>
+          <include name="setUp"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- mytest.BarcodeTest -->
+      </class> <!-- SeleniumInterviewQuestions.SeleniumInterviewQuest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
