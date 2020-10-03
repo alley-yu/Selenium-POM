@@ -194,12 +194,6 @@ public static void findPrime1(int numFrom, int numTo) {
 			sum = sum + (int)Math.pow(digit, digitList.size());
 		}
 		
-//		if (sum == iniNum) {
-//			isArmstrong = true;
-//		}
-		
-//		System.out.println(iniNum + " is an armstrong number: " + (sum == iniNum));
-		
 		return sum == iniNum;
 		
 	}

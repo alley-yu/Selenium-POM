@@ -9,6 +9,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -64,7 +66,7 @@ public class SeleniumInterviewQuest1 {
 				
 	}
 	
-	@Test
+//	@Test
 	public void findFurtherElementByElement() {
 		
 //		Based on menu's text "About", try to find further menu, keep using cssSelector
@@ -101,6 +103,31 @@ public class SeleniumInterviewQuest1 {
 			}
 		}
 		
+	}
+	
+	@Test
+	public void trySelectDisplayed() {
+		
+		driver.navigate().to("https://www.amazon.com/");
+		driver.manage().window().maximize();
+		
+//		Assert.assertTrue(driver.findElement(By.cssSelector("span.nav-sprite.nav-logo-base")).isDisplayed(), "Amazon Logo doesn't show."); 
+		if(driver.findElement(By.cssSelector("span.nav-sprite.nav-logo-base")).isDisplayed()) {
+			System.out.println("Amazon Logo is displayed.");
+		}
+		
+		WebElement category = driver.findElement(By.cssSelector(".nav-search-dropdown.searchSelect"));
+
+		category.click();
+		Select categorySel = new Select(category);
+		categorySel.selectByVisibleText("Home & Business Services");
+		
+		WebElement categorySelected = driver.findElement(By.cssSelector("span.nav-search-label"));
+		System.out.println(categorySelected.isDisplayed());
+		System.out.println(categorySelected.getText() + " is selected.");
+		
+		
+	
 	}
 		
 	
