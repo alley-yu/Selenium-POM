@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -105,7 +106,7 @@ public class SeleniumInterviewQuest1 {
 		
 	}
 	
-	@Test
+//	@Test
 	public void trySelectDisplayed() {
 		
 		driver.navigate().to("https://www.amazon.com/");
@@ -125,9 +126,44 @@ public class SeleniumInterviewQuest1 {
 		WebElement categorySelected = driver.findElement(By.cssSelector("span.nav-search-label"));
 		System.out.println(categorySelected.isDisplayed());
 		System.out.println(categorySelected.getText() + " is selected.");
-		
-		
+
+	}
 	
+	@Test
+	public void bootstrapDowndown() {
+		
+		driver.navigate().to("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
+		driver.findElement(By.cssSelector(".multiselect-selected-text")).click();
+		
+		List<WebElement> skillList = driver.findElements(By.cssSelector("ul.multiselect-container.dropdown-menu>li>a>label.checkbox"));
+
+		for (WebElement skillToSelect: skillList) {
+			if(skillToSelect.getText().equalsIgnoreCase("Java")) {
+				skillToSelect.click();
+			}
+		}
+		
+		List<WebElement> skillSelected = driver.findElements(By.cssSelector("ul.multiselect-container.dropdown-menu>li.active"));
+		for (WebElement skill: skillSelected) {
+			System.out.println(skill.getText());
+		}
+	}
+	
+	@Test
+	public void dragDropHandler() throws InterruptedException {
+		
+		driver.navigate().to("https://jqueryui.com/droppable/");
+		driver.manage().window().maximize();
+		driver.switchTo().frame(0);
+		
+		WebElement source = driver.findElement(By.id("draggable"));
+		WebElement target = driver.findElement(By.id("droppable"));
+		
+		Actions dragDropAct = new Actions(driver);
+		source.click();
+		Thread.sleep(2000);
+		dragDropAct.dragAndDrop(source, target).perform();
+		
 	}
 		
 	

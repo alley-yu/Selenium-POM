@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-02T06:16:50Z" name="Default suite" finished-at="2020-10-02T06:16:54Z" duration-ms="3982">
+  <suite started-at="2020-10-06T05:55:28Z" name="Default suite" finished-at="2020-10-06T05:55:40Z" duration-ms="11856">
     <groups>
     </groups>
-    <test started-at="2020-10-02T06:16:50Z" name="Default test" finished-at="2020-10-02T06:16:54Z" duration-ms="3982">
+    <test started-at="2020-10-06T05:55:28Z" name="Default test" finished-at="2020-10-06T05:55:40Z" duration-ms="11856">
       <class name="SeleniumInterviewQuestions.SeleniumInterviewQuest1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@e15b7e8]" started-at="2020-10-01T23:16:50Z" name="setUp" finished-at="2020-10-01T23:16:51Z" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:28Z" name="setUp" finished-at="2020-10-05T22:55:30Z" duration-ms="1873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="trySelectDisplayed()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@e15b7e8]" started-at="2020-10-01T23:16:51Z" name="trySelectDisplayed" finished-at="2020-10-01T23:16:54Z" duration-ms="2499" status="PASS">
+        <test-method signature="bootstrapDowndown()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:30Z" name="bootstrapDowndown" finished-at="2020-10-05T22:55:32Z" duration-ms="2752" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trySelectDisplayed -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@e15b7e8]" started-at="2020-10-01T23:16:54Z" name="quit" finished-at="2020-10-01T23:16:54Z" duration-ms="0" status="PASS">
+        </test-method> <!-- bootstrapDowndown -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:32Z" name="quit" finished-at="2020-10-05T22:55:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:32Z" name="setUp" finished-at="2020-10-05T22:55:34Z" duration-ms="1365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dragDropHandler()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:34Z" name="dragDropHandler" finished-at="2020-10-05T22:55:40Z" duration-ms="5842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDropHandler -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumInterviewQuestions.SeleniumInterviewQuest1@6392827e]" started-at="2020-10-05T22:55:40Z" name="quit" finished-at="2020-10-05T22:55:40Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
