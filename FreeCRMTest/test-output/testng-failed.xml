@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumInterviewQuestions.SeleniumInterviewQuest1">
+      <class name="SeleniumInterviewQuestions.SeleniumInterviewQuest2">
         <methods>
-          <include name="switchWindow"/>
+          <include name="findBrokenLinkImg"/>
           <include name="setUp"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- SeleniumInterviewQuestions.SeleniumInterviewQuest1 -->
+      </class> <!-- SeleniumInterviewQuestions.SeleniumInterviewQuest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
