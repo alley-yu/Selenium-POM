@@ -149,7 +149,7 @@ public class JavaScriptExecutorConcept {
 	
 	public static void pageScrollDownByJS(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)" );
 	}
 	
 	public static void scrollIntoView(WebDriver driver, WebElement element) {

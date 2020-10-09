@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +28,7 @@ public class SeleniumInterviewQuest2 {
 		driver = new ChromeDriver();
 	}
 	
-	@Test
+//	@Test
 	public void findBrokenLinkImg() throws MalformedURLException, IOException {
 		
 		driver.get("https://www.amazon.com/");
@@ -75,8 +77,59 @@ public class SeleniumInterviewQuest2 {
 //		}
 	}
 	
+//	@Test
+	public void resizeWindow() {
+		driver.get("https://www.amazon.com/");
+		Dimension d = new Dimension(480, 620);
+		driver.manage().window().setSize(d);
+	}
 	
-	@AfterMethod
+//	@Test
+	public void scrollDown() {
+		driver.get("https://www.amazon.com/");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		js.executeScript("window.scrollTo(0, 3000)");
+	}
+	
+//	@Test
+	public void scrollIntoView() {
+		driver.get("https://www.amazon.com/");
+		WebElement backToTop = driver.findElement(By.cssSelector("span.navFooterBackToTopText"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", backToTop);
+		System.out.println(backToTop.getText());
+		backToTop.click();
+	}
+	
+	@Test
+	public void scrollIntoView1() {
+		
+		driver.get("https://www.amazon.com/");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, document.body.scrollheight)");
+		
+		List<WebElement> bottomMenus = driver.findElements(By.cssSelector("div.navFooterColHead"));
+		List<WebElement> bottomSubMenus = new ArrayList<WebElement>();
+		
+		for (WebElement menu: bottomMenus) {
+			if (menu.getText().equalsIgnoreCase("Let Us Help You")) {
+				bottomSubMenus = menu.findElements(By.xpath("./..//ul//li")); //Use ./.. to back the parent of current element
+				break;
+			}
+		}
+		
+		for (WebElement subMenu: bottomSubMenus) {
+			if (subMenu.getText().equalsIgnoreCase("Amazon Assistant")) {
+				subMenu.click();
+				System.out.println(driver.getTitle());
+				break;
+			}
+		}
+	}
+	
+	
+//	@AfterMethod
 	public void quit() {
 		driver.quit();
 	}
