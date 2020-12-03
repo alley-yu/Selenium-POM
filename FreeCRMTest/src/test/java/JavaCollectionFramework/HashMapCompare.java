@@ -37,11 +37,26 @@ public class HashMapCompare {
 		map4.put(3, "C");
 		map4.put(4, "D");
 		
-		//3. Get the extra key when comparing two maps: HashSet (remove the common keys)
+		//3. Get the extra key from 2nd map by removing the common keys of both maps: HashSet
 		HashSet<Integer> combinedKey = new HashSet<Integer>(map1.keySet());
 		combinedKey.addAll(map4.keySet());
 		combinedKey.removeAll(map1.keySet());
 		System.out.println("the extra key when comparing map1 and map4 is: " + combinedKey);
+		
+		HashMap<Integer, String> m1 = new HashMap<Integer, String>();
+		m1.put(1, "A");
+		m1.put(2, "B");
+		m1.put(3, "C");
+		
+		HashMap<Integer, String> m2 = new HashMap<Integer, String>();
+		m2.put(2, "B");
+		m2.put(3, "C");
+		m2.put(4, "D");
+		
+		HashSet<Integer> keySet = new HashSet<Integer>(m1.keySet());
+		keySet.addAll(m2.keySet());
+		keySet.removeAll(m1.keySet());
+		System.out.println(keySet); //Output: 4
 		
 		//4. Compare by values
 		HashMap<Integer, String> map5 = new HashMap<Integer, String>();
@@ -66,6 +81,7 @@ public class HashMapCompare {
 		
 		//duplicate is allowed
 		System.out.println(new HashSet<String>(map5.values()).equals(new HashSet<String>(map7.values())));
+		
 		
 	}
 
