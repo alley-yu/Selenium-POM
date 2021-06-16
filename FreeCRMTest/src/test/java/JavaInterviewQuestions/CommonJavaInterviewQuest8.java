@@ -50,7 +50,7 @@ public class CommonJavaInterviewQuest8 {
 
 		} else {
 			int i = 0;
-			while ((i <= (fWord.length() - 1)) && (i <= (lWord.length() - 1))) {
+			while ((i < fWord.length()) && (i < lWord.length())) {
 				if (fWord.charAt(i) > lWord.charAt(i)) {
 					fWord = word2;
 					lWord = word1;

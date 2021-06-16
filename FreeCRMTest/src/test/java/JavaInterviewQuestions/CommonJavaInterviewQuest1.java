@@ -86,7 +86,7 @@ public class CommonJavaInterviewQuest1 {
 		
 //		floatMultiply();
 		
-//		convertAsciiChar();
+		convertAsciiChar();
 		
 //		vowelOrConsonant();
 		

@@ -19,7 +19,7 @@ public class CommonJavaInterviewQuest2 {
 		System.out.println(ascii);
 	}
 	
-	//In Fibonacci Series, find out the numbers no greater than N
+	//In Fibonacci busy, find out the numbers no greater than N
 	public static void fibonacciSeries(int toNum) {
 		List<Integer> fibonacciSeries = new ArrayList<Integer>();
 		fibonacciSeries.add(0);

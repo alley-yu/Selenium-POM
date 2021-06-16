@@ -20,6 +20,7 @@ public class CSSSelectorPractice {
 //		1. id --> htmltag#id, #id
 //		2. class --> htmltag.classname, .classname, .c1.c2.c3...
 //		   Some class is like class="gLFyf gsfi". The cssSelector will be input.gLFyf.gsfi, using "." replace " ".
+//		   because they are 2 classes.
 //		3. parenttag>childtag
 //		   e.g. span._5k_2._5dba>input#u_0_6 (parent by classes, child by id)
 //		4. htmltag[id = 'value']
